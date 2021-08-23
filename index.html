@@ -2,49 +2,76 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<main>
-		<H1>Penny Flip Game</H1>
-		<div>
-			<img id="penny-image" src="/assets/images/penny-heads.jpg" alt="penny image">
+    <main>
+        <H1>flip dice</H1>
+        <div>
+            <img id="penny-image" src="/assets/images/dice/dice1.png" alt="penny image">
         </div>
-            <button id="flip">Flip The Penny!</button>
-            <button id="clear">Clear The Scoreboard</button>
-            <div class="message-container">
-                    <h3 id="message">Let's Get Flipping!</h3>
-                </div>
+        <button id="flip">Flip The Penny!</button>
+        <button id="clear">Clear The Scoreboard</button>
+        <div class="message-container">
+            <h3 id="message">Let's Get Flipping!</h3>
+        </div>
+        <hr>
+        <div>
+            <h2>Scoreboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dice Number</th>
+                        <th>Dice Number Count</th>
+                        <th>Dice Number Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td id="dice-number-0">1</td>
+                        <td id="dice-number-count-0">0</td>
+                        <td id="dice-number-percentage-0">0%</td>
+                    </tr>
+
+                    <tr>
+                        <td id="dice-number-1">2</td>
+                        <td id="dice-number-count-1">0</td>
+                        <td id="dice-number-percentage-1">0%</td>
+                    </tr>
+                    <tr>
+                        <td id="dice-number-2">2</td>
+                        <td id="dice-number-count-2">0</td>
+                        <td id="dice-number-percentage-2">0%</td>
+                    </tr>
+                    <tr>
+                        <td id="dice-number-3">4</td>
+                        <td id="dice-number-count-3">0</td>
+                        <td id="dice-number-percentage-3">0%</td>
+                    </tr>
+                    <tr>
+                        <td id="dice-number-4">4</td>
+                        <td id="dice-number-count-4">0</td>
+                        <td id="dice-number-percentage-4">0%</td>
+                    </tr>
+                    <tr>
+                        <td id="dice-number-5">5</td>
+                        <td id="dice-number-count-5">0</td>
+                        <td id="dice-number-percentage-5">0%</td>
+                    </tr>
+
+                </tbody>
+            </table>
             <hr>
-            <div>
-                <h2>Scoreboard</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Number of Heads</th>
-                            <th>Percentage Heads</th>
-                            <th>Number of Tails</th>
-                            <th>Percentage Tails</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="heads">0</td>
-                            <td id="heads-percent">0%</td>
-                            <td id="tails">0</td>
-                            <td id="tails-percent">0%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                 <hr>
-        
-            </div>
+
+        </div>
         </div>
     </main>
     <script src="/assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
