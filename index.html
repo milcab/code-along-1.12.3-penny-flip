@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penny Flip Game</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <main>
-        <H1>Penny Flip Game</H1>
-        <div>
-            <div>Penny Image Display, Button Controls, and Status Message</div>
+	<main>
+		<H1>Penny Flip Game</H1>
+		<div>
+			<img id="penny-image" src="/assets/images/penny-heads.jpg" alt="penny image">
+        </div>
+            <button id="flip">Flip The Penny!</button>
+            <button id="clear">Clear The Scoreboard</button>
+            <div class="message-container">
+                    <h3 id="message">Let's Get Flipping!</h3>
+                </div>
             <hr>
             <div>
                 <h2>Scoreboard</h2>
@@ -32,9 +40,11 @@
                         </tr>
                     </tbody>
                 </table>
+                 <hr>
+        
             </div>
         </div>
     </main>
-    <script src="assets/js/script.js"></script>
-</body>
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>
